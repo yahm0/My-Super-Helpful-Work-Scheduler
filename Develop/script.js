@@ -20,36 +20,15 @@ $(function () {
       </div>
     `;
 
-    // Append the time block to the container in the HTML
-    $('#timeBlocks').append(timeBlockHtml);
-  }
+// Append the time block to the container in the HTML
+$('#timeBlocks').append(timeBlockHtml);
+}
 
-  // Function to determine the class for time blocks based on current time
-  function determineTimeBlockClass(hour) {
-    const currentHour = dayjs().hour(); // Get current hour in 24-hour format
-    // Return class name based on time comparison
-    if (hour < currentHour) return 'past'; // Time block is in the past
-    if (hour === currentHour) return 'present'; // Time block is in the current hour
-    return 'future'; // Time block is in the future
-  }
-
-  // Event listener for save buttons within each time block
-  $('.saveBtn').on('click', function() {
-    // Use DOM traversal to find the ID of the parent time block
-    const hourId = $(this).parent().attr('id');
-    // Retrieve the event text from the sibling textarea element
-    const eventText = $(this).siblings('.description').val();
-    // Save the event text in localStorage, keyed by the time block's ID
-    localStorage.setItem(hourId, eventText);
-  });
-
-  // Load saved data from localStorage for each time block
-  $('.time-block').each(function() {
-    const hourId = $(this).attr('id'); // Get the ID of the time block
-    const savedEvent = localStorage.getItem(hourId); // Retrieve saved event text using the ID
-    // If there is saved data, populate the textarea in the time block
-    if (savedEvent) {
-      $(this).find('.description').val(savedEvent);
-    }
-  });
-});
+// Function to determine the class for time blocks based on current time
+function determineTimeBlockClass(hour) {
+  const currentHour = dayjs().hour(); // Get current hour in 24-hour format
+  // Return class name based on time comparison
+  if (hour < currentHour) return 'past'; // Time block is in the past
+  if (hour === currentHour) return 'present'; // Time block is in the current hour
+  return 'future'; // Time block is in the future
+}    
