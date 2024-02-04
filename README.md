@@ -48,3 +48,7 @@ Accessing and utilizing the Work Day Scheduler requires no installation. The pla
 2. **Plan Your Day**: Click on any time block to add or update an event.
 3. **Save**: After entering an event, click the adjacent save icon to store your data.
 4. **Review**: Saved events remain accessible, allowing you to revisit and revise your schedule as needed.
+
+## License Information
+
+This project is open-source and available under the [GNU License](LICENSE.txt). Feel free to use, modify, and distribute the code as you see fit.
