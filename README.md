@@ -25,3 +25,26 @@ The Work Day Scheduler is a dynamic web application tailored for professionals s
 - **Persistent Storage**: Events are securely saved to local storage, guaranteeing that user data is preserved across page refreshes and sessions.
 
 ## Application Preview
+
+Get a glimpse of the Work Day Scheduler's interface and functionality:
+
+![Work Day Scheduler Preview](<Assets/Screenshot 2024-01-28 140410.png> "Work Day Scheduler Interface")
+
+## Getting Started
+
+Accessing and utilizing the Work Day Scheduler requires no installation. The platform is web-based, accessible through any modern web browser, and designed for quick and immediate use.
+
+## Technologies Used
+
+- **Bootstrap**: For responsive styling and layout management.
+- **Font Awesome**: Provides elegant icons, enhancing the application's aesthetics.
+- **Open Sans Font**: A clean and readable font from Google Fonts, ensuring content clarity.
+- **jQuery**: Facilitates document manipulation, event handling, and dynamic content rendering.
+- **Day.js**: A lightweight library for comprehensive date functions, supporting parsing, validation, and formatting.
+
+## Quick Start Guide
+
+1. **Access**: Navigate to the Work Day Scheduler using your preferred web browser.
+2. **Plan Your Day**: Click on any time block to add or update an event.
+3. **Save**: After entering an event, click the adjacent save icon to store your data.
+4. **Review**: Saved events remain accessible, allowing you to revisit and revise your schedule as needed.
